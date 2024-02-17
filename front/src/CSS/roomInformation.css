@@ -1,0 +1,18 @@
+.room-information-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+    .room-info{
+        flex-basis: 60%;
+    }
+
+    .payment-info{
+        flex-basis: 40%;
+        border: 1px solid var(--secondary-color);
+        position: sticky; /* add position property to make the div sticky */
+        top: 5rem; /* add top property to specify where the div should stick */
+        height: 5rem;
+    }
+}

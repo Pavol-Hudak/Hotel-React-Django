@@ -1,0 +1,80 @@
+.profile-content{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    position: relative;
+}
+
+
+
+#edit-personal-info-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 1rem 10rem;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+}
+
+#edit-personal-info-form label{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#edit-personal-info-form label input{
+    cursor:auto;
+    pointer-events: none;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* For older versions of webkit browsers */
+    -moz-user-select: none; /* For older versions of Firefox */
+    height: 3rem;
+    font-size: large;
+    padding-left: 1rem;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: absolute;
+    justify-content: center;
+    align-self: flex-start;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    gap: 2rem;
+}
+
+.side-bar{
+    position: sticky;
+}
+
+.edit-info-button{
+    max-width: 10rem;
+    width: 10rem;
+    height: 3rem;
+}
+
+.hidden-label{
+    display: none;
+}
+
+#your-reservation{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.room-list{
+    list-style: none;
+    padding-top: 2rem;
+}
+.room-list-item{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+

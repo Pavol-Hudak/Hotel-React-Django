@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid var(--secondary-color);
+    z-index: 2;
+}
+
+
+
+#title {
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.navbar-left, .navbar-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;    
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    
+}
+.navbar-left{
+    width: 40%;
+}
+
+.navbar-right{
+    padding-right: 3rem;
+    
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 10px 0 10px 0;
+}
+
+.nav-link.login{
+    font-size: medium;
+    padding: 14px 0 10px 0;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid var(--secondary-color);
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.dropdown-button{
+    max-width: 100%;
+    width: 100px;
+    border:none;
+    background: none;
+    padding: 14px 0 10px 0;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: medium;
+    z-index: 2;
+    cursor: pointer;
+}
+.dropdown-button:hover{
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.dropdown-options {
+    right: 0;
+    align-items: left;
+    width: 250px;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border-top: 2px solid var(--secondary-color);
+    overflow: visible;
+    z-index: 300 !important;
+}
+
+.dropdown-choice{
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+    opacity: 100%;
+    padding: 0.5rem 0;
+}
+.dropdown-choice:hover{
+    opacity: 50%;
+}
+
+
+  
